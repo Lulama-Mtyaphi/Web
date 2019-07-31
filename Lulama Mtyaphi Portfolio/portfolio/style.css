@@ -1,0 +1,278 @@
+@font-face{
+	src: url(fonts/Monoton-Regular.ttf);
+	font-family: Mono;
+}
+@font-face{
+	src: url(fonts/GiveYouGlory-Regular.ttf);
+	font-family: Glory;
+}
+@font-face{
+	src: url(fonts/Megrim-Regular.ttf);
+	font-family: Megrim;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body{
+	font-size:15px;
+	line-height:1.5;
+}
+
+
+
+/* HEADER */
+.container nav.desk,
+.container nav.mob{
+	width:100%;
+	background:bisque;
+	height: 60px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+nav.desk ul{
+	list-style:none;
+	width:75%;
+	height:60px;
+	margin:0 auto;
+}
+
+nav.desk ul li{
+	width:20%;
+	float:left;
+	text-align:center;
+	line-height: 60px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition:all 0.5s ease;
+}
+
+nav ul li:hover{
+	background:gray;
+}
+
+nav ul li.active{
+	background:gray;
+}
+
+nav ul li a{
+	color: black;
+	text-decoration: none;
+	text-decoration-style: bold;
+
+}
+
+nav.mob{
+	display:none;
+}
+
+@media screen and (max-width: 700px){
+	nav.desk{
+		display: none;
+	}
+
+	nav.mob{
+		display: block;
+	}
+
+	.mob ul{
+		margin-top:10px;
+		background:bisque;
+	}
+
+	.mob li{
+		text-transform:uppercase;
+		text-align: center;
+		padding:10px;
+		cursor:pointer;
+	}
+}
+/* HEADER */
+
+
+
+
+/* HOME */
+
+#Home {
+	min-height:600px;
+	max-height: 100%;
+	width: 100% ;
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./images/pbook.jpg');
+	text-align: center;
+	padding-top:300px;
+	
+
+}
+
+h4{
+	font-family: Glory;
+	font-size:70px;
+	color: pink;
+}
+	
+/* HOME */
+
+
+
+
+/* ABOUT */
+
+#About {
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./images/bite.jpg');
+	min-height:800px;
+	max-height: 100%;
+	padding-top:50px;
+	color:black;
+	width: 100% ;
+}
+
+.face{
+	text-align:center;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap
+}
+
+
+h1 {
+
+    font-family: Megrim;
+	text-align: center;
+	font-weight: bold;
+	text-decoration:none;
+	color: black;
+	text-transform: capitalize;
+	padding: 70px;
+
+}
+
+h2{
+	font-size:34px;
+}
+
+
+
+h3 {
+	text-align: center;
+	font-weight: 500px;
+	padding: 20px;
+	text-decoration: none;
+}
+
+
+
+
+.cv 
+
+
+/* ABOUT */
+
+
+
+
+/* PROJECTS */
+
+#Projects {
+	width: 100% ;
+	min-height:800px;
+	max-height: 100%;
+	padding-top:50px;
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/white.jpg');
+
+
+}
+
+.power {
+	text-indent: 60px ;
+	text-align: center;
+	padding-bottom: 150px;
+}
+
+.python {
+
+	text-align: center;
+	padding-top: 150px;
+
+}
+
+/* PROJECTS */
+
+
+
+/* CONTACT */
+
+#Contact{
+	background-size: 100%;
+	width: 100% ;
+	min-height:800px;
+	max-height: 100%;
+	margin:0;
+	padding-top:50px;
+	text-align:center;
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.0)), url('./images/lumi.jpg');
+	background-size:cover;	
+	background-position:center;
+	font-family: sans-serif;
+	
+
+}
+
+form {
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+
+.form-control{
+	width:300px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: white;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input {
+	height:45 px;
+}
+
+form .submit{
+	background: orchid;
+	border-color: transparent;
+	color: black;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+form .submit:hover{
+	background-color:f44336;
+	cursor:pointer;
+	
+}
+
+.last-word {
+	text-align: center;
+	position:relative;
+	border-top:grey 3px solid;
+	background:bisque;
+	color:black;
+	min-height:70px;
+	width: 100% ;
+}
+
+
+
+/*Contact*/
